@@ -1,14 +1,14 @@
 h1,.subtitulo-principal, .subtitulo-secundario{
     text-shadow: 5px 5px #000;
 }
-.saudacao .sites-maravilhosos::hover,
-.saudacao .sites-maravilhosos::focus{
+.saudacao:hover .sites-maravilhosos,
+.saudacao:focus .sites-maravilhosos{
     -webkit-animation-play-state: paused;
      animation-play-state: paused;
 }
 .sites-maravilhosos{
-    animation: flutua .5s ease; 
-    -webkit-animation: flutua .5s infinite ease;
+    -webkit-animation: flutua .5s ease; 
+    -webkit-animation: flutua .5s infinite ease-in-out;
     position: relative;
     -webkit-animation-direction: alternate;
 }
