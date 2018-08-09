@@ -1,3 +1,6 @@
+body{
+    display: block;
+}
 h1,.subtitulo-principal, .subtitulo-secundario{
     text-shadow: 5px 5px #000;
 }
@@ -91,12 +94,11 @@ h1,.subtitulo-principal, .subtitulo-secundario{
     color: #FFF;
 }
 .trabalhos ul {
-    overflow: hidden;
+    display: flex;
     border: .5em solid black;
 }
 .trabalhos li {
-    float: left;
-    width: 33.333%;
+    flex: 1;
 }
 .trabalhos img {
     width: 100%;
@@ -324,4 +326,17 @@ a:focus + .inicio-post{
 .blog a:focus{
     background-color: #F2FFFC;
     color: #F26;
+}
+trabalhos ul{
+    display: flex;
+}
+trabalhos li:first-child{
+    order: 2;
+    transform: scale(1.5);
+}
+trabalhos li:nth-child(2){
+    order: 1;
+}
+trabalhos li:last-child{
+    order: 3;
 }
